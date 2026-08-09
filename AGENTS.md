@@ -65,7 +65,3 @@ Do not bundle processed live radar data as a service or feed.
 - Add tests for parsing, frame discovery, grid handling, rendering output, and manifest generation.
 - Avoid speculative abstractions for unsupported future radar products.
 - Keep setup straightforward for a developer cloning the repository for the first time.
-
-## Related project
-
-NASA's `nasa/MMM-Py` is prior art in the broader MRMS ecosystem. MRMS Renderer must remain independently implemented. Do not copy or adapt MMM-Py source code into this project.
