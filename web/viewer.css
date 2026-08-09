@@ -1,0 +1,36 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#controls {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 8px;
+    padding: 8px 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+#timeline {
+    width: 220px;
+}
+
+#timestamp {
+    min-width: 170px;
+    font-variant-numeric: tabular-nums;
+}

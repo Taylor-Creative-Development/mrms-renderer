@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MRMS Renderer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+    <div id="map"></div>
+
+    <div id="controls">
+        <button id="play" type="button">Pause</button>
+        <input id="timeline" type="range" min="0" max="0" value="0" aria-label="Frame timeline">
+        <label for="speed">Speed</label>
+        <select id="speed" aria-label="Playback speed">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="2">2x</option>
+            <option value="4">4x</option>
+        </select>
+        <span id="timestamp" aria-label="Frame timestamp"></span>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="viewer.js"></script>
+</body>
+</html>
