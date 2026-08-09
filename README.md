@@ -59,10 +59,6 @@ Animated radar overlay
 
 MRMS Renderer is currently being prepared for its first public release.
 
-## Related work
-
-NASA's [MMM-Py](https://github.com/nasa/MMM-Py) is a scientific toolkit for ingesting, analyzing, and visualizing MRMS radar mosaics, particularly 3D radar-volume workflows. MRMS Renderer is independently implemented and focuses on lightweight rendering of current 2D MRMS products for animated application and web-map visualization.
-
 ## Data attribution
 
 Radar data is provided by the National Oceanic and Atmospheric Administration (NOAA) through the Multi-Radar/Multi-Sensor (MRMS) system.
