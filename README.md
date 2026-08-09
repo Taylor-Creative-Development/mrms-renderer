@@ -67,7 +67,7 @@ Map data and tiles used by the demonstration viewer will follow the applicable O
 
 ## License
 
-A project license will be selected before the first public release.
+MRMS Renderer is licensed under the Apache License 2.0. See the `LICENSE` file for details.
 
 ---
 
