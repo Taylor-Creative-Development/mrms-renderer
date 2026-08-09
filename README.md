@@ -1,0 +1,70 @@
+# MRMS Renderer
+
+**MRMS Renderer** is an open-source project for retrieving, rendering, and visualizing NOAA Multi-Radar/Multi-Sensor (MRMS) radar data.
+
+The project is focused on turning current 2D MRMS radar products into application-friendly visual output, including animated radar layers for web mapping interfaces.
+
+## Project goals
+
+MRMS Renderer aims to make it straightforward for developers to:
+
+- retrieve recent NOAA MRMS radar files directly from NOAA/NCEP sources;
+- decode MRMS GRIB2 data locally;
+- transform radar reflectivity values into transparent rendered imagery;
+- generate a time-ordered sequence of radar frames;
+- visualize and animate those frames over an interactive map.
+
+The initial public release will focus on NOAA's `ReflectivityAtLowestAltitude` product and a local browser-based demonstration.
+
+## Project scope
+
+MRMS Renderer is focused on retrieving, rendering, and visualizing NOAA MRMS radar data locally.
+
+## Planned v0.1 scope
+
+- Retrieve up to 30 recent MRMS `ReflectivityAtLowestAltitude` frames
+- Decode GRIB2 using ecCodes
+- Process radar data with NumPy
+- Render transparent PNG frames
+- Generate a frame manifest
+- Display radar over an OpenStreetMap-based map
+- Animate the radar sequence with basic playback controls
+- Provide a clean local setup and command-line workflow
+
+## Architecture
+
+```text
+NOAA MRMS
+    ↓
+GRIB2 download
+    ↓
+ecCodes
+    ↓
+NumPy radar grid
+    ↓
+RGBA rendering
+    ↓
+PNG frames + manifest
+    ↓
+JavaScript map viewer
+    ↓
+Animated radar overlay
+```
+
+## Status
+
+MRMS Renderer is currently being prepared for its first public release.
+
+## Data attribution
+
+Radar data is provided by the National Oceanic and Atmospheric Administration (NOAA) through the Multi-Radar/Multi-Sensor (MRMS) system.
+
+Map data and tiles used by the demonstration viewer will follow the applicable OpenStreetMap attribution requirements.
+
+## License
+
+MRMS Renderer is licensed under the Apache License 2.0. See the `LICENSE` file for details.
+
+---
+
+MRMS Renderer is developed by **Taylor Creative Development**.
