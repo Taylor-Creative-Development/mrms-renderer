@@ -18,9 +18,9 @@ the sequence over an OpenStreetMap-based interactive map in the browser.
 ## Setup
 
 ```sh
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
-pip install -e ".[dev]"
+python -m pip install -e ".[dev]"
 ```
 
 ## Usage
