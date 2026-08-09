@@ -2,9 +2,10 @@
 
 ## Product definition
 
-MRMS Renderer is a finished open-source developer tool, not an experiment and not a hosted service.
-
-Its purpose is to let a developer retrieve current NOAA MRMS radar data, process it locally, render it into application-friendly imagery, and view an animated sequence over an interactive map.
+MRMS Renderer is a finished open-source developer tool for retrieving current
+NOAA MRMS radar data, processing it locally, rendering it into
+application-friendly imagery, and viewing an animated sequence over an
+interactive map.
 
 ## v0.1 target
 
@@ -29,32 +30,24 @@ The proven processing stack is:
 - NumPy
 - Pillow
 
-Do not replace these merely for stylistic reasons. Refactor only when it improves reliability, packaging, testability, portability, or clarity.
+Do not replace these merely for stylistic reasons. Refactor only when it
+improves reliability, packaging, testability, portability, or clarity.
 
-## Hard scope boundaries
+## Public scope boundaries
 
-Do not add any of the following unless explicitly requested:
+Keep changes focused on functionality documented in this repository. Do not
+introduce unrelated product, service, or infrastructure concerns without an
+explicit project decision.
 
-- AWS or other cloud infrastructure
-- cron jobs or scheduled ingestion
-- hosted radar imagery
-- public or private radar APIs
-- CDN configuration
-- databases
-- authentication
-- WeatherKit
-- Weather Experience application code
-- Swift or Swift packages
-- server-side production deployment architecture
-- background production ingestion systems
-
-The open-source repository demonstrates how users can retrieve and manipulate NOAA data themselves. Taylor Creative Development's production ingestion and delivery systems are private and outside this repository.
+Proprietary Taylor Creative Development products, services, infrastructure,
+and implementation details are outside the scope of this repository and must
+not be described or inferred in public project documentation.
 
 ## Data behavior
 
-Generated GRIB2, NetCDF, PNG, and other radar output files must not be committed to Git. They should be generated locally into an ignored output directory.
-
-Do not bundle processed live radar data as a service or feed.
+Generated GRIB2, NetCDF, PNG, and other radar output files must not be
+committed to Git. They should be generated locally into an ignored output
+directory.
 
 ## Development approach
 
