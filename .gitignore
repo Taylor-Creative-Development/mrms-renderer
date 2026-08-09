@@ -39,3 +39,4 @@ frames/
 # Benchmark / scratch artifacts
 benchmark_output.png
 *.tmp
+prototype/
