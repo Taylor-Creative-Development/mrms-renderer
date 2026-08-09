@@ -60,6 +60,10 @@ output/
   index.html        local viewer (installed automatically)
 ```
 
+## Demo
+
+![MRMS Renderer animated radar demo](docs/assets/mrms-demo.gif)
+
 ## Products
 
 The v0.1 release is scoped to NOAA's `ReflectivityAtLowestAltitude` product.

@@ -30,7 +30,8 @@ The proven processing stack is:
 - NumPy
 - Pillow
 
-Do not replace these merely for stylistic reasons. Refactor only when it improves reliability, packaging, testability, portability, or clarity.
+Do not replace these merely for stylistic reasons. Refactor only when it
+improves reliability, packaging, testability, portability, or clarity.
 
 ## Public scope boundaries
 
@@ -44,7 +45,9 @@ not be described or inferred in public project documentation.
 
 ## Data behavior
 
-Generated GRIB2, NetCDF, PNG, and other radar output files must not be committed to Git. They should be generated locally into an ignored output directory.
+Generated GRIB2, NetCDF, PNG, and other radar output files must not be
+committed to Git. They should be generated locally into an ignored output
+directory.
 
 ## Development approach
 
