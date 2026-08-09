@@ -25,8 +25,8 @@ python -m pip install -e ".[dev]"
 
 ## Usage
 
-The CLI runs the full local workflow and never touches a hosted radar
-service — every byte is fetched from NOAA/NCEP.
+The CLI runs the complete local workflow using radar data retrieved directly
+from NOAA/NCEP.
 
 | Command | What it does |
 | --- | --- |
@@ -118,14 +118,12 @@ frames.json manifest  (mrms_renderer/manifest.py)
 JavaScript viewer animation  (web/)
 ```
 
-## What this project is not
+## Project scope
 
-MRMS Renderer is not a hosted radar service, processed radar feed,
-commercial API, weather forecast service, or production framework. It
-includes none of Taylor Creative Development's private production
-infrastructure: no scheduling, cloud deployment, WeatherKit integration,
-CDN, databases, or authentication. Users retrieve and process NOAA data
-themselves.
+MRMS Renderer is focused on the local radar rendering workflow documented in
+this repository. Proprietary Taylor Creative Development products, services,
+and infrastructure are outside the scope of this project and are not
+documented here.
 
 ## Data attribution
 
